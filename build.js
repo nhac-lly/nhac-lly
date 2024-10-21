@@ -28,7 +28,7 @@ const data = {
   labelCard: chalk.white.bold('    Card:'),
   labelFB: chalk.white.bold('Facebook:'),
   labelMe: chalk.white.bold('Me:'),
-  me: chalk.orange('Asshole working at Dcorp')
+  me: chalk.red('Asshole working at Dcorp')
 }
 
 // Actual strings we're going to output

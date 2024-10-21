@@ -1,6 +1,6 @@
 {
   "name": "nhac-lly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A personal card for nhac-lly",
   "main": "/bin/card.js",
   "bin": {
