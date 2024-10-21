@@ -26,7 +26,9 @@ const data = {
   labelLinkedIn: chalk.white.bold('LinkedIn:'),
   labelWeb: chalk.white.bold('     Web:'),
   labelCard: chalk.white.bold('    Card:'),
-  labelFB: chalk.white.bold('Facebook:')
+  labelFB: chalk.white.bold('Facebook:'),
+  labelMe: chalk.white.bold('Me:'),
+  me: chalk.orange('Asshole working at Dcorp')
 }
 
 // Actual strings we're going to output
@@ -37,14 +39,20 @@ const githubing = `${data.labelGitHub}  ${data.github}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 const fbing = `${data.labelFB}  ${data.fb}`
+const me = `${data.labelMe} ${data.me}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + // data.name + data.handle
+const output2 = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
                npming + newline + // data.labelnpm + data.npm
                fbing + newline +
                githubing + newline + // data.labelGitHub + data.github
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
+const output = heading +
+newline + newline +
+me +
+newline +
+carding
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
